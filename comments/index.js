@@ -26,6 +26,6 @@ app.post("/posts/:id/comments",(req,res)=>{
     res.status(201).send(commentsByPostId[req.params.id]);
 })
 
-app.listen(3000,()=>    {
-    console.log("server is running on port 3000");
+app.listen(4001,()=>    {
+    console.log("server is running on port 4001");
 })

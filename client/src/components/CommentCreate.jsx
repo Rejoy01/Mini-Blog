@@ -4,7 +4,7 @@ import axios from 'axios'
 const CommentCreate = ({postId}) => {
 
     const Api = axios.create({
-        baseURL:"http://localhost:3000"
+        baseURL:"http://localhost:4001"
     })
 
     const [content , setContent] = useState()

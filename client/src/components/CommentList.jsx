@@ -7,7 +7,7 @@ const CommentList = ({postId}) => {
 
     const fetchData = async () => {
 
-        const res = await axios.get(`http://localhost:3000/posts/${postId}/comments`)
+        const res = await axios.get(`http://localhost:4001/posts/${postId}/comments`)
         setComment(res.data)
         // console.log(res.data);
 
