@@ -1,5 +1,7 @@
 import React from 'react'
 import Posts from './components/Posts'
+import PostList from './components/PostList'
+
 
 
 
@@ -10,6 +12,11 @@ const App = () => {
             Create Post
         </h1>
         <Posts />
+        <hr />
+        <h1>
+            Posts
+        </h1>
+        <PostList />
     </div>
   )
 }
