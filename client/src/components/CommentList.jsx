@@ -13,7 +13,7 @@ const CommentList = ({postId}) => {
 
     }
 
-    useEffect(()=>{
+    useEffect(()=>{      
         fetchData()
         // 
         
