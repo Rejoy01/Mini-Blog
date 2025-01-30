@@ -4,8 +4,20 @@ import axios from 'axios'
 
 const CommentList = ({comments}) => {
    
-    const renderedComments = comments?.map(comments =>{
-        return <li  key={comments.id}>{comments.content}</li>
+    const renderedComments = comments?.map(comment =>{
+        let content ;
+
+        if(comment.status == "approved"){
+          content = comment.content
+        }
+        if(comment.status == "pending"){
+          content = "comment under moderation"
+        }
+        if(comment.status == "rejected"){
+          content = "comment rejected"
+        }
+
+        return <li  key={comment.id}>{content}</li>
     })
 
   return (
