@@ -9,6 +9,7 @@ const Posts = () => {
 
 
     const [title , setTitle] = useState('')
+    
     const onSubmit = async (event) =>{
         event.preventDefault();
         await Api.post("/posts",{
