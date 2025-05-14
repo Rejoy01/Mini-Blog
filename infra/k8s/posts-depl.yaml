@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: posts
-          image: docker-desktop/posts
+          image: rejoy01/posts
           
 ---
 apiVersion: v1
